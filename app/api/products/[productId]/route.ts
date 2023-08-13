@@ -1,4 +1,4 @@
-import { mockProducts } from "@/mock-data/products";
+import { mockProducts } from "@/mocks/products";
 import { NextResponse } from "next/server";
 
 // NOTE: There cannot be a route.js file at the same route segment level as page.js. That's why I put API routes are under /api.

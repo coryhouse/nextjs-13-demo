@@ -1,4 +1,4 @@
-import { Product } from "@/mock-data/products";
+import { Product } from "@/mocks/products";
 import { useQuery } from "@tanstack/react-query";
 
 export function useProduct(id: string) {

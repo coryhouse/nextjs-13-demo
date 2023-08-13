@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import AddToCart from "./add-to-cart";
-import { Product } from "@/mock-data/products";
+import { Product } from "@/mocks/products";
 
 type ProductDetailPageProps = {
   params: { productId: string };

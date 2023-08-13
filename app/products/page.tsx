@@ -1,4 +1,4 @@
-import { Product } from "@/mock-data/products";
+import { Product } from "@/mocks/products";
 import Link from "next/link";
 
 export default async function ProductsPage() {
