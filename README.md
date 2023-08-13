@@ -36,3 +36,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## My Notes
 
 - Watch out - Make sure you're not editing the .next folder. Sometimes it gets focused automatically.
+
+## TODO
+
+- [ ] Implement react-query like this: https://twitter.com/i/bookmarks/1682019945238994946
