@@ -1,10 +1,20 @@
 "use client";
-import { addToCart } from "@/utils/cart-utils";
+import { useCartContext } from "@/context/cart-context";
 
 type AddToCartProps = {
   productId: string;
 };
 
 export default function AddToCart({ productId }: AddToCartProps) {
-  return <button onClick={() => addToCart(productId)}>Add to cart</button>;
+  const { addToCart } = useCartContext();
+  return (
+    <button
+      onClick={() => {
+        addToCart(productId);
+        alert("added to cart");
+      }}
+    >
+      Add to cart
+    </button>
+  );
 }
