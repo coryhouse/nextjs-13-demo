@@ -1,8 +1,10 @@
+import { Product } from "@/mock-data/products";
 import Link from "next/link";
-import { Product } from "../api/products/route";
 
 export default async function ProductsPage() {
-  const resp = await fetch("http://localhost:3000/api/products");
+  const resp = await fetch("http://localhost:3000/api/products", {
+    next: { revalidate: 60 }, // Revalidate every 60 seconds
+  });
   const products = (await resp.json()) as Product[];
 
   return (
