@@ -12,10 +12,10 @@ type ProvidersProps = {
 
 export default function Providers({ children }: ProvidersProps) {
   return (
-    <QueryClientProvider client={queryClient}>
-      <ReactQueryStreamedHydration>
-        <CartContextProvider>{children}</CartContextProvider>
-      </ReactQueryStreamedHydration>
-    </QueryClientProvider>
+    <CartContextProvider>
+      <QueryClientProvider client={queryClient}>
+        <ReactQueryStreamedHydration>{children}</ReactQueryStreamedHydration>
+      </QueryClientProvider>
+    </CartContextProvider>
   );
 }
