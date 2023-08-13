@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* https://tailwindcss.com/docs/adding-custom-styles#adding-base-styles */
 @layer base {
   a {
     @apply text-blue-700 underline;
