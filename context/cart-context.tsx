@@ -3,7 +3,8 @@ import React from "react";
 
 type CartContextValue = {
   cart: number[];
-  setCart: React.Dispatch<React.SetStateAction<number[]>>;
+  addToCart: (productId: string) => void;
+  removeFromCart: (productId: string) => void;
 };
 
 const CartContext = React.createContext<CartContextValue | null>(null);
@@ -15,7 +16,17 @@ type CartContextProviderProps = {
 export function CartContextProvider({ children }: CartContextProviderProps) {
   const [cart, setCart] = React.useState<number[]>([]);
   return (
-    <CartContext.Provider value={{ cart, setCart }}>
+    <CartContext.Provider
+      value={{
+        cart,
+        addToCart: (productId: string) => {
+          setCart([...cart, parseInt(productId)]);
+        },
+        removeFromCart: (productId: string) => {
+          setCart(cart.filter((id) => id !== parseInt(productId)));
+        },
+      }}
+    >
       {children}
     </CartContext.Provider>
   );
