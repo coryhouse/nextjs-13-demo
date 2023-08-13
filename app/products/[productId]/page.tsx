@@ -19,6 +19,7 @@ export default async function ProductDetailPage({
   return (
     <>
       <h2>{product.name}</h2>
+      <p>${product.price}</p>
       <AddToCart productId={params.productId} />
     </>
   );
