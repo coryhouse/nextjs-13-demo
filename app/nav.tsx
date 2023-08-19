@@ -1,15 +1,16 @@
 "use client";
 
 import { useCartContext } from "@/context/cart-context";
-import Link from "next/link";
+import NavLink from "./nav-link";
 
 export default function Nav() {
   const { cart } = useCartContext();
 
   return (
     <nav>
-      <Link href="/">Home</Link> | <Link href="/products">Products</Link> |{" "}
-      <Link href="/cart">Cart ({cart.length})</Link>
+      <NavLink path="/">Home</NavLink> |{" "}
+      <NavLink path="/products">Products</NavLink> |{" "}
+      <NavLink path="/cart">Cart ({cart.length})</NavLink>
     </nav>
   );
 }
