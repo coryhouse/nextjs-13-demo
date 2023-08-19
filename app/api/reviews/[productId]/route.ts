@@ -9,12 +9,12 @@ export async function GET(
   request: Request,
   { params }: GetProductReviewParams
 ) {
-  const matchingReview = mockReviews.find(
+  const matchingReviews = mockReviews.filter(
     (p) => p.id.toString() === params.productId
   );
 
   // add a fake delay
   // setTimeout(function () {
-  return matchingReview ? NextResponse.json(matchingReview) : [];
+  return matchingReviews ? NextResponse.json(matchingReviews) : [];
   // }, delayInMilliseconds);
 }
