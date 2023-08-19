@@ -5,9 +5,7 @@ type ReviewsProps = {
 };
 
 export default async function Reviews({ productId }: ReviewsProps) {
-  const resp = await fetch(
-    `http://localhost:3000/api/products/${productId}/reviews`
-  );
+  const resp = await fetch(`http://localhost:3000/api/reviews/${productId}`);
   const reviews = (await resp.json()) as Review[];
 
   return (
