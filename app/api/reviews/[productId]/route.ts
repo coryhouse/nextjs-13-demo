@@ -13,10 +13,8 @@ export async function GET(
     (p) => p.id.toString() === params.productId
   );
 
-  // console.log("matching reviews", matchingReviews);
-
   // add a fake delay
   // setTimeout(function () {
-  return NextResponse.json(matchingReviews : []);
+  return NextResponse.json(matchingReviews ? matchingReviews : []);
   // }, delayInMilliseconds);
 }
