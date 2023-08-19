@@ -11,7 +11,6 @@ export default function AddToCart({ productId }: AddToCartProps) {
     <button
       onClick={() => {
         addToCart(productId);
-        alert("added to cart");
       }}
     >
       Add to cart
