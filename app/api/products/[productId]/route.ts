@@ -13,7 +13,9 @@ export async function GET(
   );
 
   if (!matchingProduct)
-    return NextResponse.next({ status: 404, statusText: "Product not found." });
+    return new Response("Product not found.", {
+      status: 404,
+    });
 
   return NextResponse.json(matchingProduct);
 }
