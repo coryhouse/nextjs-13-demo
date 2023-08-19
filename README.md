@@ -57,7 +57,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## My Notes
 
-- Watch out - Make sure you're not editing the .next folder. Sometimes it gets focused automatically.
+- Watch out - Make sure you're not editing the .next folder. If you move a file, VS Code opens the changed file, but doesn't save it. So, save the file and close it.
 
 ## TODO
 
