@@ -18,6 +18,7 @@ export default async function ProductDetailPage({
 
   if (params.productId === "0") notFound();
   if (params.productId === "a") throw new Error("Invalid product id");
+
   return (
     <>
       <h2>{product.name}</h2>
