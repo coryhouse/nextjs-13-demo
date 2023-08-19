@@ -9,14 +9,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - [x] Migrating from getServerSideProps to React Server Components
 - [x] Declaring root and nested layouts
 - [x] Customizing error pages via error boundaries
+- [x] Declaring client-side components via use-client
 - [x] Linking between pages
-- [ ] Streaming responses to improve TTFB
+- [x] Fetching on the server via React Server Components
+- [x] Wrapping in Suspense to stream responses to improve TTFB and lazy load slow portions of a server-rendered page.
+- [x] Parallel routes (implemented on home page)
 - [ ] Styling active links via usePathname
 - [ ] Programmatic nav via useRouter
 - [ ] Automatic prefetching
 - [ ] Grouping related routes via groups
-- [ ] Fetching on the server via React Server Components
-- [x] Declaring client-side components via use-client
 - [ ] Composing server components within client components
 - [ ] Importing CSS in components
 - [ ] Fetching and caching via React Query
