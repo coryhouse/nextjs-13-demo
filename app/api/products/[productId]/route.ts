@@ -8,9 +8,6 @@ export async function GET(
   request: Request,
   { params }: { params: { productId: string } }
 ) {
-  if (!params.productId)
-    return NextResponse.next({ status: 400, statusText: "Missing productId." });
-
   const matchingProduct = mockProducts.find(
     (p) => p.id.toString() === params.productId
   );
