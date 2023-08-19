@@ -1,5 +1,27 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Agenda
+
+- [x] Implementing file-based routing via the new app folder
+- [x] Migrating from \_app.tsx and \_document.tsx to a root layout
+- [x] Understanding file conventions
+- [x] Displaying loading state
+- [x] Migrating from getServerSideProps to React Server Components
+- [x] Declaring root and nested layouts
+- [x] Customizing error pages via error boundaries
+- [x] Linking between pages
+- [ ] Streaming responses to improve TTFB
+- [ ] Styling active links via usePathname
+- [ ] Programmatic nav via useRouter
+- [ ] Automatic prefetching
+- [ ] Grouping related routes via groups
+- [ ] Fetching on the server via React Server Components
+- [x] Declaring client-side components via use-client
+- [ ] Composing server components within client components
+- [ ] Importing CSS in components
+- [ ] Fetching and caching via React Query
+- [ ] Other topics found and agreed upon as relevant during discovery.
+
 ## Getting Started
 
 First, run the development server:
