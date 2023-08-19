@@ -58,6 +58,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## My Notes
 
 - Watch out - Make sure you're not editing the .next folder. If you move a file, VS Code opens the changed file, but doesn't save it. So, save the file and close it.
+- If you're seeing "old" data, then delete the .next folder. I wasted a LOT of time because it kept seeing a single record from the api, instead of the updated array I was sending.
 
 ## TODO
 
